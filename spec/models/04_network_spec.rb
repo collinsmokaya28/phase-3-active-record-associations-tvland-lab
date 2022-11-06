@@ -10,12 +10,7 @@ describe Network do
     expect(nbc).to have_attributes(channel: 4, call_letters: "NBC")
   end
 
-  describe "#shows" do
-    it "returns the shows associated with the network" do
-      community = Show.find_by(name: "Community")
-      expect(nbc.shows).to include(community)
-    end
-  end
+
 
   describe "#sorry" do
     it "apologizes for passing on John Mulaney's Pilot" do
